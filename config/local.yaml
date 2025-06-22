@@ -1,0 +1,5 @@
+env: "local"
+http-server:
+  address: "localhost:8089"
+  timeout: 30s # Время обработки запроса
+  idle-timeout: 300s # Время ожидания закрытия соединения
