@@ -115,19 +115,6 @@ curl -H "Content-Type:application/json" http://localhost:8080/tasks/8608dc81-5ab
 }
 ```
 
-3. Удалить задачу
-```bash
-curl -X DELETE -H "Content-Type:application/json" http://localhost:8080/tasks/8608dc81-5ab8-4bce-b60d-224281e3937b
-```
-
-#### Пример ответа:
-```json
-{
-    "status": "deleted",
-    "id": "89510b0d-fd19-4bce-87f4-4c18f2f327f2"
-}
-```
-
 #### Пример ответа (для cancelled):
 ```json
 {
@@ -138,5 +125,18 @@ curl -X DELETE -H "Content-Type:application/json" http://localhost:8080/tasks/86
     "started_at": "2025-06-22T12:28:50.7149508+03:00",
     "completed_at": "2025-06-22T12:29:00.0836418+03:00",
     "duration": "9.368691s"
+}
+```
+
+3. Удалить задачу
+```bash
+curl -X DELETE -H "Content-Type:application/json" http://localhost:8080/tasks/8608dc81-5ab8-4bce-b60d-224281e3937b
+```
+
+#### Пример ответа:
+```json
+{
+    "status": "deleted",
+    "id": "89510b0d-fd19-4bce-87f4-4c18f2f327f2"
 }
 ```
